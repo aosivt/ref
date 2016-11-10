@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/cdi-api-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/classmate-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/el-api-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/flute-1.3.0.gg2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/hibernate-commons-annotations-5.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/hibernate-core-5.2.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/hsqldb-2.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jandex-2.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/javassist-3.20.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jboss-logging-3.3.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/js-1.7R2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jsoup-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jsr250-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/jxl-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/sac-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/alllibforproject/yuicompressor-2.4.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
