@@ -20,26 +20,27 @@ public class MainController {
 
     {
 
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        Query q = session.createQuery("From PivotTableProtocol");
 
-        List<PivotTableProtocol> resultlist = (List<PivotTableProtocol>) q.list();
-        GetAppData appData;
-        for (PivotTableProtocol next : resultlist) {
-            appData = new GetAppData();
-            appData.setSum(next.getSum());
-            appData.setDate_in(next.getDate_in()==null?"Не определена":next.getDate_in().toString());
-            appData.setDate_out(next.getDate_out()==null?"Не определена":next.getDate_out().toString());
-            appData.setId_protocol(next.getProtocol_id());
-            appData.setName_organization(next.getOrganization()==null?"Не определена":next.getOrganization().getName_organization());
-            appData.setDocument(next.getDocument());
-            appData.setReason(next.getReason());
-            appData.setReview(next.getReview());
-            appData.setOrganization(next.getOrganization());
-            appData.setViewProtocol(next.getViewProtocol());
+//        Session session = HibernateUtil.getSessionFactory().openSession();
+//        Query q = session.createQuery("From PivotTableProtocol");
+//
+//        List<PivotTableProtocol> resultlist = (List<PivotTableProtocol>) q.list();
+//        GetAppData appData;
+//        for (PivotTableProtocol next : resultlist) {
+//            appData = new GetAppData();
+//            appData.setSum(next.getSum());
+//            appData.setDate_in(next.getDate_in()==null?"Не определена":next.getDate_in().toString());
+//            appData.setDate_out(next.getDate_out()==null?"Не определена":next.getDate_out().toString());
+//            appData.setId_protocol(next.getProtocol_id());
+//            appData.setName_organization(next.getOrganization()==null?"Не определена":next.getOrganization().getName_organization());
+//            appData.setDocument(next.getDocument());
+//            appData.setReason(next.getReason());
+//            appData.setReview(next.getReview());
+//            appData.setOrganization(next.getOrganization());
+//            appData.setViewProtocol(next.getViewProtocol());
 //            itemContainer.addBean(appData);
-        }
-        session.close();
+//        }
+//        session.close();
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Ghbdtn");

@@ -15,7 +15,7 @@ public class InitCode extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("FormView/ProjectGridLayout.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 1000,500 ));
         primaryStage.show();
 //        Button save_data = (Button)root.lookup("#save_data");
 
