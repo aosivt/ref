@@ -12,6 +12,29 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InitPack.Controller.MainController">
    <children>
+      <HBox prefHeight="27.0" prefWidth="978.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
       <HBox prefHeight="190.0" prefWidth="978.0">
          <children>
             <TitledPane animated="false" text="Информаци по документу" HBox.hgrow="ALWAYS">
@@ -91,10 +114,10 @@
          </children></HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <TableView prefHeight="100.0" prefWidth="847.0" HBox.hgrow="ALWAYS">
+            <TableView fx:id="containPivot" prefHeight="100.0" prefWidth="847.0" HBox.hgrow="ALWAYS">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <!--<TableColumn prefWidth="75.0" text="C1" />-->
+                <!--<TableColumn prefWidth="75.0" text="C2" />-->
               </columns>
             </TableView>
          </children>
