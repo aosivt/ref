@@ -17,9 +17,6 @@ public class InitCode extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 1000,500 ));
         primaryStage.show();
-//        Button save_data = (Button)root.lookup("#save_data");
-
-
     }
 
 
