@@ -75,3 +75,25 @@ public class JDBCExample {
     }
 
 }*/
+
+
+//
+//    Statement st = conn.createStatement();
+//    ResultSet rs = st.executeQuery("SELECT * FROM mytable WHERE columnfoo = 500");
+//while (rs.next())
+//        {
+//        System.out.print("Column 1 returned ");
+//        System.out.println(rs.getString(1));
+//        } rs.close();
+//        st.close();
+
+//SELECT * from generate_series(1,1000) as field
+
+//    WITH RECURSIVE nums AS
+//        (SELECT 1 AS value
+//                UNION ALL
+//                SELECT value + 1 AS value
+//                FROM nums
+//                WHERE nums.value <= 99)
+//SELECT *
+//        FROM nums
