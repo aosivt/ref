@@ -41,27 +41,9 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="435.0">
                      <children>
-                        <SplitPane dividerPositions="0.4797979797979798" prefHeight="160.0" prefWidth="430.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                          <items>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                 <children>
-                                    <TextField prefHeight="26.0" prefWidth="181.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
-                                    <Label text="Номер ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
-                                    <ComboBox prefHeight="26.0" prefWidth="179.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0" />
-                                    <Label text="Вид документа по ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
-                                 </children>
-                              </AnchorPane>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="235.0">
-                                 <children>
-                                    <TextField layoutX="12.0" layoutY="30.0" prefHeight="26.0" prefWidth="196.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
-                                    <Label layoutX="95.0" layoutY="14.0" text="Документ по ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
-                                    <ComboBox layoutX="13.0" layoutY="79.0" prefHeight="26.0" prefWidth="181.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0" />
-                                    <Label layoutX="13.0" layoutY="63.0" text="Наименование организации" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
-                                 </children>
-                              </AnchorPane>
-                          </items>
-                        </SplitPane>
-                     </children></AnchorPane>
+                        <fx:include source="OrganizationForm.fxml" />
+                     </children>
+                </AnchorPane>
               </content>
             </TitledPane>
             <TitledPane animated="false" text="Регистрационная дата открытия">
@@ -76,7 +58,7 @@
                   </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" text="Решистрационная дата закрытия" textAlignment="JUSTIFY">
+            <TitledPane animated="false" text="Регистрационная дата закрытия" textAlignment="JUSTIFY">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -112,13 +94,20 @@
                </HBox.margin>
             </Button>
          </children></HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="178.0" prefWidth="978.0">
          <children>
-            <TableView fx:id="containPivot" prefHeight="100.0" prefWidth="847.0" HBox.hgrow="ALWAYS">
-              <columns>
-                <!--<TableColumn prefWidth="75.0" text="C1" />-->
-                <!--<TableColumn prefWidth="75.0" text="C2" />-->
-              </columns>
+            <TableView fx:id="containPivot" prefHeight="132.0" prefWidth="978.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="num_p" prefWidth="75.0" text="Номер ИП" />
+                  <TableColumn fx:id="name_org" prefWidth="75.0" text="Наимеование организации" />
+                  <TableColumn fx:id="date_open" prefWidth="75.0" text="Дата возбуждения" />
+                  <TableColumn fx:id="date_close" prefWidth="75.0" text="Дата закрытия" />
+                  <TableColumn fx:id="sum_p" prefWidth="75.0" text="Сумма" />
+                  <TableColumn fx:id="view_doc" prefWidth="75.0" text="Вид документа" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
             </TableView>
          </children>
       </HBox>

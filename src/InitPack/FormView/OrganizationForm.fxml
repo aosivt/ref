@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+
+
+<SplitPane dividerPositions="0.4797979797979798" prefHeight="160.0" prefWidth="430.0" AnchorPane.bottomAnchor="6.0"
+           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+           fx:controller="InitPack.Controller.ComboboxSetGetData.ComboboxController"
+           xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label text="Номер ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                <TextField prefHeight="26.0" prefWidth="181.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" fx:id="number_protocol"/>
+                <Label text="Наименование организации" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                <ComboBox editable="true" prefHeight="26.0" prefWidth="179.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0" fx:id="name_organization" onAction="#onEnterOrganization"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="235.0">
+            <children>
+                <Label layoutX="95.0" layoutY="14.0" text="Документ по ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                <TextField layoutX="12.0" layoutY="30.0" prefHeight="26.0" prefWidth="196.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" fx:id="name_document"/>
+                <Label layoutX="13.0" layoutY="63.0" text="Вид документа по ИП" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                <ComboBox editable="true" layoutX="13.0" layoutY="79.0" prefHeight="26.0" prefWidth="181.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0" fx:id="view_document" onAction="#onEnterViewDocument"/>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
+
